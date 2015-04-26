@@ -7,3 +7,5 @@ origin:http://git.oschina.net/lyricc/LolView/tree/master
 
 <img src="./ib.png" >
 
+使用了SOIL，没有使用shader，非现代。
+
