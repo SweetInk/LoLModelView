@@ -67,10 +67,11 @@ void display(){
     yAxisRotate += 0.5;
     glRotatef(yAxisRotate,0,yAxisRotate,0);
     
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_COLOR);
     glEnable(GL_DEPTH_TEST);
-    glColor3f(1.0,0.5,1.0);
+    glColor3f(1.0,1.0,1.0);
     //这个查看depth精度的方法已经在GL3中被无效了。
     int depth;
     glGetIntegerv(GL_DEPTH_BITS, &depth);

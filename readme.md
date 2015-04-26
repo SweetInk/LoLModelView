@@ -1,37 +1,9 @@
-#LoL model viewer for mac
+LoL model viewer for mac
+====
 origin:http://git.oschina.net/lyricc/LolView/tree/master
 
-#skn mesh
+æ”¹ä¸ºxcodeå·¥ç¨‹ï¼Œä¿®å¤äº†ä¸€äº›é”™è¯¯ã€‚è¿è¡Œæ—¶è¯·æŠŠDDSå’ŒSKNæ”¾åˆ°å¯æ‰§è¡Œç¨‹åºæ‰€åœ¨ç›®å½•ã€‚
 
-#texture format
-TGA,DDS
-Ö÷Òª²Î¿¼ÁË¹Ù·½ÎÄµµ£¬Unity3DÖ§³ÖµÄÍ¼ÐÎÎÄ¼þ¸ñÊ½ÓÐ PSD, TIFF, JPG, TGA, PNG, GIF, BMP, IFF, PICT£¨µ«¸ù¾Ý±¾ÈËµÄÇ×ÊÖ²âÊÔ£¬Unity3D¶Ô¸ßÑ¹ËõÓÎÏ·ÌùÍ¼DDSÊÇ¾ßÓÐÁ¼ºÃµÄ½âÎö¹¦ÄÜµÄ£¬µ«DDS¾ßÌåÒ²·ÖºÜ¶à¸ñÊ½ÀàÐÍ£¬ÎÒ½ö¶ÔÓÎÏ·ÖÐÌáÈ¡³öµÄDDS½øÐÐÁË²âÊÔ£©¡£
-PSDÖÐ²ãÔÚµ¼ÈëUnityÖ®ºó½«»á×Ô¶¯ºÏ²¢£¬µ«Ô­PSDÎÄ¼þµÄ²ãÔò×÷Îª±£Áô£¬²»±Ø½éÒâÔÚPSDÀïÃæ´æ·ÅÓÐ¶à¸öÍ¼²ã¡£
-ÎÆÀí³ß´çÊÇÒ»¸öÖØµã×¢ÒâÊÂÏî£¬ÒòÎª·Ç2µÄÃÝ´Î³ß´çÎÆÀíÓÃÓÚGUIÎÆÀíÊ±Ê¹ÓÃ»á·Ç³£ºÃ£¬È»¶ø£¬ÔÚÆäËû·½Ãæ£¬¸ÃÎÆÀí½«±»×ª»¯ÎªÒ»¸ö·ÇÑ¹ËõµÄRGBA32Î»¸ñÊ½£¬Õâ»áÕ¼ÓÃ¸ü¶àµÄÏÔ´æ£¬²¢ÇÒ´ó´ó½µµÍ¼ÓÔØËÙ¶È¡£µ«·Ç2µÄÃÝ´Î³ß´çÎÆÀí¿ÉÒÔÔÚµ¼ÈëÉèÖÃÖÐÊ¹ÓÃScale NonPower2 Sizes Up½«·Ç2µÄÃÝ´ÎÎÆÀí×ÊÔ´·Å´óµ½2µÄÃÝ´Î¡£ÕâÑù¿ÉÒÔÈÃ¸ÃÍ¼ÐÎ±»µ±×÷ÆäËû2µÄÃÝ´Î³ß´çÎÆÀíÄÇÑùÊ¹ÓÃ£¬±»Ñ¹ËõÖ®ºóÕ¼ÓÃ½ÏÐ¡µÄÏÔ´æ¿Õ¼ä£¬²¢ÓÐ½Ï¿ìµÄ¼ÓÔØËÙ¶È£¡
-»¹ÓÐ×÷ÎªÐÔÄÜµÄ¿¼ÂÇ£¬Ä£ÐÍÌùÍ¼Òª¾¡Á¿Ê¹ÓÃMip Maps¡£Ê¹ÓÃ¸ÃMip maps½«¶àÊ¹ÓÃ33%µÄÄÚ´æ£¬µ«ÄÜ´øÀ´ºÜ´óµÄÐÔÄÜÉÏµÄÓÅÊÆ¡£¾àÀëÏà»ú½ÏÔ¶µÄÎïÌå½«Ê¹ÓÃ½ÏÐ¡µÄÎÆÀí¡£
-×îºóÔÚ·ÇµØÃæºÍµØ°åÄ£ÐÍ¶ÔÏóÉÏ£¬¾¡Á¿²»ÒªÊ¹ÓÃAnisotropic filtering¡£
 
-#gl draw
-ºì±¦Êé
-Dave Shreiner, Graham Sellers, John M. Kessenich and Bill M. Licea-Kane. 2013. OpenGL Programming Guide: The Official Guide to Learning OpenGL, Version 4.3 (8th Edition). Addison-Wesley Professional. ISBN 978-0321773036.
+<img src="./ib.png" >
 
-³È±¦Êé
-Randi J. Rost, Bill M. Licea-Kane, Dan Ginsburg, John M. Kessenich, Barthold Lichtenbelt, Hugh Malan and Mike Weiblen. 2009. OpenGL Shading Language (3rd Edition). Addison-Wesley Professional. ISBN 978-0321637635
-
-äÖÈ¾OBJ¸ñÊ½ÎÄ¼þ£¨ÎÞ¶¯»­£©
-http://www.cnblogs.com/zhouxin/p/3453809.html
-http://www.cnblogs.com/antai/archive/2010/01/06/1640488.html
-http://blog.csdn.net/caca001/article/details/5207597
-FBX £¡£¡£¡
-http://en.wikipedia.org/wiki/Category:3D_graphics_file_formats
-http://en.wikipedia.org/wiki/FBX
-RAW¶¯»­Êý¾ÝÊÇÔõÃ´ÑùµÄÒ»¸ö´æÔÚ£¿£¿£¿
-
-·¨ÏßÌùÍ¼£º
-ÌùÍ¼Êý¾Ý»áÔÚpixel shaderÄÚ¿É±à³Ì´¦Àí¡£
-ÎÆÀíÌùÍ¼_____> pixel shader > ¸ù¾Ý·¨ÏßºÍÎÆÀíÊý¾Ý¼°¹âÕÕ->Ê¹Æ½ÃæÉÏµÄPixel¾ßÓÐ3d¸Ð¡£
-·¨ÏßÌùÍ¼
-
-githubµÄcontributionÊ±¼äÏßÍ¼£¬¿ÉÒÔÔÚÉÏÃæ»­¸öÍ¼Å¶¡£»­µãÉ¶ÄØ£¿
-
-https://code.google.com/p/recombination-3d-4-on-the-beam/ ºÜÓÐÒâË¼
