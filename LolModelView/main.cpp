@@ -20,7 +20,7 @@ struct texinfo{
     int channel;
     GLuint texid;
 };
-texinfo g_tex;
+texinfo g_tex; 
 
 LolSknHeader* sknHeader = 0;
 float yAxisRotate = 0;
@@ -62,18 +62,20 @@ void display(){
     glEnable(GL_DEPTH_TEST);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(0,330,300,0,0,0,0,1,0);
+    gluLookAt(0,330,500,0,0,0,0,1,0);
     glPushMatrix();
     yAxisRotate += 0.5;
     glRotatef(yAxisRotate,0,yAxisRotate,0);
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_COLOR);
+    glEnable(GL_DEPTH_TEST);
     glColor3f(1.0,0.5,1.0);
+    //这个查看depth精度的方法已经在GL3中被无效了。
     int depth;
     glGetIntegerv(GL_DEPTH_BITS, &depth);
     std::cout<<depth<<" bits depth"<<std::endl;
-    //FIXME: z-buffer为0bit！！怎么设置？
+    //FIXME: z-buffer为0bit！！怎么设置？由于窗口没有打开深度测试。
     drawSkn(sknHeader, g_tex.texid);
     
     glPopMatrix();
@@ -86,7 +88,7 @@ int main(int argc, char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
+    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
     glutInitWindowPosition(100,100);
     glutInitWindowSize(800, 600);
     glutCreateWindow("lol model view");
